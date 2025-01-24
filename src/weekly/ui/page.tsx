@@ -5,7 +5,7 @@ import {WeeklyTitle} from './title.tsx';
 import {Nav} from '../../shared/ui/nav.tsx';
 import {LineBox} from '../../shared/ui/line-box.tsx';
 import {Checklist} from '../../shared/ui/checklist.tsx';
-import GoogleCalendar from '../../assets/google-calendar.png';
+import GoogleCalendar from '../../assets/google-calendar.svg';
 import {WeeklyMiniCalendar} from './mini-calendar.tsx';
 
 interface Props {
