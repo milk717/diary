@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+@layer utilities {
+    .h-main {
+        height:calc(210mm - 93.25px)
+    }
+}
+
+
+:root {
+    font-size: 14px;
+}
+
+html {
+    font-family: 'Pretendard', sans-serif;
+}
+
+.page-break {
+    page-break-before: always; /* 이전에 페이지 나눔 */
+    page-break-after: always; /* 이후에 페이지 나눔 */
+    page-break-inside: avoid; /* 페이지 안에서 잘리지 않도록 */
+}
+
+.grid-bg {
+    background-image:
+            linear-gradient(to right, var(--color-slate-50) 1px, transparent 1px),
+            linear-gradient(to bottom, var(--color-slate-50) 1px, transparent 1px);
+    background-size: 0.89rem 0.89rem;
+}
+
+.bg-mystic-fog {
+    background:
+            radial-gradient(circle, rgba(255, 255, 255, 0.2) 20%, transparent 70%) center/200% 200%,
+            linear-gradient(to top, rgba(255, 255, 255, 0.3), transparent),
+            linear-gradient(to bottom, rgba(255, 255, 255, 0.3), transparent),
+            linear-gradient(to bottom right, #94a3b8, #bfdbfe 50%, #c4b5fd 100%);
+    backdrop-filter: blur(4px);
+    animation: fogPulse 6s infinite alternate;
+}
+
+
+@keyframes fogPulse {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 100% 100%;
+    }
+}
