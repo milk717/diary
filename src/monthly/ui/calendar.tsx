@@ -10,7 +10,7 @@ export const Calendar = ({monthNumber}: Props) => {
   const [monthDates, extra] = generateCalendar(CURRENT_YEAR, monthNumber);
 
   return (
-    <div className="h-main border-slate-200 border-l">
+    <div className="border-slate-200 border-l border-r h-full">
       <div className="flex justify-between items-center border-b border-slate-200">
         {new Array(7).fill(0).map((_, i) => (
           <div
@@ -20,7 +20,7 @@ export const Calendar = ({monthNumber}: Props) => {
           </div>
         ))}
       </div>
-      <div className="grid grid-cols-7 h-[calc(210mm_-_121px)]">
+      <div className="grid grid-cols-7 h-full">
         {monthDates?.map((month, i) =>
           i < 28 ? (
             <div

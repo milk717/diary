@@ -5,7 +5,6 @@ import {WeeklyTitle} from './title.tsx';
 import {Nav} from '../../shared/ui/nav.tsx';
 import {LineBox} from '../../shared/ui/line-box.tsx';
 import {Checklist} from '../../shared/ui/checklist.tsx';
-import GoogleCalendar from '../../assets/google-calendar.svg?react';
 import {WeeklyMiniCalendar} from './mini-calendar.tsx';
 
 interface Props {
@@ -19,12 +18,7 @@ const Page = ({date}: Props) => {
       <WeeklyTitle date={date} />
       <div className="grid grid-cols-12">
         <div className="col-span-2 border-r border-b border-slate-200">
-          <div className="flex justify-between bg-indigo-50 px-3 border-b border-slate-200">
-            <a
-              className="mt-3"
-              href={`https://calendar.google.com/calendar/u/0/r/month/${date.format('YYYY-MM-DD')}`}>
-              <GoogleCalendar />
-            </a>
+          <div className="flex justify-between bg-indigo-50 p-2 border-b border-slate-200">
             <WeeklyMiniCalendar date={date} />
           </div>
           <Checklist

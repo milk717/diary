@@ -28,7 +28,7 @@ export const Box = ({title, description, href, icon, classNames}: Props) => {
         </div>
         {description && <p className="text-xs text-slate-500">{description}</p>}
       </div>
-      <div className={cn(classNames?.box || 'min-h-24', 'grid-bg')} />
+      <div className={cn(classNames?.box || 'min-h-24 flex-1', 'grid-bg')} />
     </div>
   );
 };

@@ -10,7 +10,7 @@ interface Props {
 
 export const Nav = ({monthNumber, currentId}: Props) => {
   return (
-    <div className="bg-indigo-50 w-full flex justify-between items-center py-2 px-4 text-slate-700 text-sm border-b border-b-slate-200">
+    <div className="h-10 bg-indigo-50 w-full flex justify-between items-center py-2 px-4 text-slate-700 text-sm border-b border-b-slate-200">
       <div className="flex items-center">
         {monthNumber ? (
           <a
@@ -28,9 +28,8 @@ export const Nav = ({monthNumber, currentId}: Props) => {
           <a
             href="#goal"
             className={cn(
-              'flex items-center gap-1 rounded',
-              currentId === 'goal' &&
-                'ring-indigo-200 ring ring-offset-4 ring-offset-indigo-50',
+              'flex items-center gap-1 rounded py-0.5 px-1',
+              currentId === 'goal' && 'bg-indigo-200',
             )}>
             <Goal size={16} />
             <span>Goal</span>
@@ -38,9 +37,8 @@ export const Nav = ({monthNumber, currentId}: Props) => {
           <a
             href={`#${CURRENT_YEAR}`}
             className={cn(
-              'flex items-center gap-1 rounded',
-              currentId === 'yearly' &&
-                'ring-indigo-200 ring ring-offset-4 ring-offset-indigo-50',
+              'flex items-center gap-1 rounded py-0.5 px-1',
+              currentId === 'yearly' && 'bg-indigo-200',
             )}>
             <CalendarDays size={16} />
             <span>{CURRENT_YEAR}</span>
@@ -48,9 +46,8 @@ export const Nav = ({monthNumber, currentId}: Props) => {
           <a
             href="#routine"
             className={cn(
-              'flex items-center gap-1 rounded',
-              currentId === 'routine' &&
-                'ring-indigo-200 ring ring-offset-4 ring-offset-indigo-50',
+              'flex items-center gap-1 rounded py-0.5 px-1',
+              currentId === 'routine' && 'bg-indigo-200',
             )}>
             <Sprout size={16} />
             <span>Routine</span>

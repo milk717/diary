@@ -7,11 +7,13 @@ const Page = () => {
   return (
     <PageLayout id="routine">
       <Nav currentId="routine" />
-      <div className="flex w-full">
-        <Box title="Routine" classNames={{base: 'flex-1', box: 'h-52'}} />
-        <Box title="Routine" classNames={{base: 'flex-1', box: 'h-52'}} />
+      <div className="flex flex-col h-main">
+        <div className="flex w-full">
+          <Box title="Routine" classNames={{base: 'flex-1', box: 'h-52'}} />
+          <Box title="Routine" classNames={{base: 'flex-1', box: 'h-52'}} />
+        </div>
+        <YearTable />
       </div>
-      <YearTable />
     </PageLayout>
   );
 };

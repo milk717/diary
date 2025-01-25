@@ -63,8 +63,8 @@ const Page = ({monthNumber, dayNumber}: Props) => {
             description="오늘의 목표 달성을 점검해보자"
           />
         </div>
-        <div className="col-span-3 h-[calc(210mm_-_36px)]">
-          <div className="flex justify-start items-start p-3 gap-1.5 border-b border-r border-slate-200 h-[61px]">
+        <div className="flex flex-col col-span-3 h-main">
+          <div className="flex justify-start items-start p-3 gap-1.5 border-b border-r border-slate-200 h-16">
             <TreePalm size={16} className="stroke-slate-700" />
             <p className="font-medium text-sm">Goals</p>
           </div>

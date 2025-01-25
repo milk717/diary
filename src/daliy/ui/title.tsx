@@ -8,7 +8,7 @@ interface Props {
 
 const Title = ({monthNumber, dayNumber}: Props) => {
   return (
-    <div className="flex items-center justify-center bg-indigo-50 border-b-slate-200 border-b text-slate-700 h-[61px] py-2 px-8 border-r border-r-slate-200">
+    <div className="flex items-center justify-center bg-indigo-50 border-b-slate-200 border-b text-slate-700 h-16 py-2 px-8 border-r border-r-slate-200">
       <p className="text-xl font-semibold">
         {dayjs(
           `${CURRENT_YEAR}-${String(monthNumber).padStart(2, '0')}-${String(dayNumber).padStart(2, '0')}`,

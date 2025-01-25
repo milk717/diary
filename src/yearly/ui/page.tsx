@@ -8,7 +8,7 @@ const Page = () => {
   return (
     <PageLayout id={`${CURRENT_YEAR}`}>
       <Nav currentId="yearly" />
-      <div className="grid grid-cols-3 h-[calc(210mm_-_36px)]">
+      <div className="grid grid-cols-3 h-main">
         {new Array(12).fill(0).map((_, i) => (
           <div
             key={i}

@@ -17,7 +17,7 @@ export const MiniCalendar = ({
 }: Props) => {
   const [monthDates, extra] = generateCalendar(CURRENT_YEAR, monthNumber);
 
-  const dateList = [...monthDates, ...(extra?.length ? extra : [])].slice(
+  const dateList = [...monthDates!, ...(extra?.length ? extra : [])].slice(
     0,
     extra?.length ? 42 : 35,
   );
@@ -38,7 +38,7 @@ export const MiniCalendar = ({
           href={`#${CURRENT_YEAR}-${monthNumber}`}
           className={cn(
             'font-medium text-center',
-            size === 'md' ? 'text-sm' : 'text-[0.6rem]',
+            size === 'md' ? 'text-sm' : 'text-[0.7rem]',
           )}>
           {monthNumber} {getMonthName(monthNumber)}
         </a>
