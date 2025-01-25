@@ -6,23 +6,21 @@ export const YearTable = () => {
   const dateList = groupDatesByMonth(CURRENT_YEAR);
 
   return (
-    <div className="w-full h-[calc(210mm_-_258.5px)] flex flex-col">
+    <div className="w-full h-[calc(210mm_-_258.5px)] flex flex-col border-slate-200 border-r border-b">
       {dateList.map((dates, i) => (
-        <div key={i} className="flex h-full">
-          <p className="flex-1 flex justify-center items-center border-r border-b border-slate-200 font-semibold bg-indigo-50 text-slate-600">
+        <div key={i} className="flex h-full divide-slate-200 divide-x">
+          <p className="flex-1 flex justify-center items-center font-semibold bg-indigo-50 text-slate-600">
             {dates[0].month() + 1}
           </p>
-          <div className="flex w-[1193px] overflow-hidden border-r border-slate-100">
+          <div className="flex w-[1193px] overflow-hidden divide-x divide-slate-100">
             {[...dates, ...new Array<number>(31 - dates.length).fill(0)].map(
               (date, j) => (
                 <div
                   key={j}
-                  className={cn(
-                    'w-11 h-full border-slate-100 border-b',
-                    j !== 0 && 'border-l',
-                    j === 34 && 'border-r',
-                  )}>
-                  {typeof date === 'number' ? null : (
+                  className={cn('w-11 h-full border-b border-slate-100')}>
+                  {typeof date === 'number' ? (
+                    <div />
+                  ) : (
                     <>
                       <a
                         href={`#${date.format('YYYY-MM-DD')}`}
