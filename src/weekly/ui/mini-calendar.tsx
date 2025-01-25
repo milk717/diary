@@ -14,7 +14,7 @@ interface Props {
 const MiniCalendar = ({className, date}: Props) => {
   const [monthDates, extra] = generateCalendar(CURRENT_YEAR, date.month() + 1);
 
-  const dateList = [...monthDates, ...(extra?.length ? extra : [])].slice(
+  const dateList = [...monthDates!, ...(extra?.length ? extra : [])].slice(
     0,
     extra?.length ? 42 : 35,
   );

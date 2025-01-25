@@ -1,6 +1,7 @@
-import MsTodo from '../../assets/ms-todo.svg';
-import GoogleCalendar from '../../assets/google-calendar.svg';
-import Obsidian from '../../assets/obsidian.svg';
+import MsTodo from '../../assets/ms-todo.svg?react';
+import GoogleCalendar from '../../assets/google-calendar.svg?react';
+import Obsidian from '../../assets/obsidian.svg?react';
+
 import {CURRENT_YEAR} from '../../shared/constants.ts';
 
 interface Props {
@@ -14,15 +15,15 @@ export const Icons = ({monthNumber, dayNumber}: Props) => {
       <p className="font-semibold">Apps</p>
       <div className="flex gap-x-6">
         <a href="shortcuts://run-shortcut/?name=Open%20todo%20list">
-          <img alt="ms-todo" src={MsTodo} width={24} height={24} />
+          <MsTodo />
         </a>
         <a
           href={`https://calendar.google.com/calendar/u/0/r/day/${CURRENT_YEAR}/${String(monthNumber).padStart(2, '0')}/${String(dayNumber).padStart(2, '0')}`}>
-          <img alt="ms-todo" src={GoogleCalendar} width={24} height={24} />
+          <GoogleCalendar />
         </a>
         <a
           href={`obsidian://open/?vault=sumin&file=%EB%8B%A4%EC%9D%B4%EC%96%B4%EB%A6%AC%2Fdaily%2F${CURRENT_YEAR}-${String(monthNumber).padStart(2, '0')}-${String(dayNumber).padStart(2, '0')}`}>
-          <img alt="ms-todo" src={Obsidian} width={24} height={24} />
+          <Obsidian />
         </a>
       </div>
     </div>

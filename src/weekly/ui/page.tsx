@@ -5,7 +5,7 @@ import {WeeklyTitle} from './title.tsx';
 import {Nav} from '../../shared/ui/nav.tsx';
 import {LineBox} from '../../shared/ui/line-box.tsx';
 import {Checklist} from '../../shared/ui/checklist.tsx';
-import GoogleCalendar from '../../assets/google-calendar.svg';
+import GoogleCalendar from '../../assets/google-calendar.svg?react';
 import {WeeklyMiniCalendar} from './mini-calendar.tsx';
 
 interface Props {
@@ -23,7 +23,7 @@ const Page = ({date}: Props) => {
             <a
               className="mt-3"
               href={`https://calendar.google.com/calendar/u/0/r/month/${date.format('YYYY-MM-DD')}`}>
-              <img alt="ms-todo" src={GoogleCalendar} width={24} height={24} />
+              <GoogleCalendar />
             </a>
             <WeeklyMiniCalendar date={date} />
           </div>
