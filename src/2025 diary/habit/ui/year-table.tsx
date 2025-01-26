@@ -1,6 +1,6 @@
-import {groupDatesByMonth} from '../../shared/utils/date.ts';
-import {CURRENT_YEAR} from '../../shared/constants.ts';
-import {cn} from '../../shared/utils/style.ts';
+import {groupDatesByMonth} from '../../../shared/utils/date.ts';
+import {CURRENT_YEAR} from '../../../shared/constants.ts';
+import {cn} from '../../../shared/utils/style.ts';
 
 export const YearTable = () => {
   const dateList = groupDatesByMonth(CURRENT_YEAR);

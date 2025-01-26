@@ -1,6 +1,6 @@
-import {cn} from '../../shared/utils/style.ts';
-import {PageLayout} from '../../shared/ui/page-layout.tsx';
-import Cover from '../../assets/cover.svg?react';
+import {cn} from '../../../shared/utils/style.ts';
+import {PageLayout} from '../../../shared/ui/page-layout.tsx';
+import Cover from '../../../assets/cover.svg?react';
 
 export const CoverPage = () => {
   return (

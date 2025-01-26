@@ -1,5 +1,5 @@
-import {cn} from '../../shared/utils/style.ts';
-import {CURRENT_YEAR} from '../../shared/constants.ts';
+import {cn} from '../../../shared/utils/style.ts';
+import {CURRENT_YEAR} from '../../../shared/constants.ts';
 
 interface Props {
   monthNumber: number;

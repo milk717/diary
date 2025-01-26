@@ -1,8 +1,8 @@
-import {PageLayout} from '../../shared/ui/page-layout.tsx';
-import {Nav} from '../../shared/ui/nav.tsx';
-import {CURRENT_YEAR} from '../../shared/constants.ts';
-import {MiniCalendar} from '../../shared/ui/mini-calendar.tsx';
-import {cn} from '../../shared/utils/style.ts';
+import {PageLayout} from '../../../shared/ui/page-layout.tsx';
+import {Nav} from '../../../shared/ui/nav.tsx';
+import {CURRENT_YEAR} from '../../../shared/constants.ts';
+import {MiniCalendar} from '../../../shared/ui/mini-calendar.tsx';
+import {cn} from '../../../shared/utils/style.ts';
 
 const Page = () => {
   return (

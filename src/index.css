@@ -5,6 +5,10 @@
         height: calc(210mm - calc(var(--spacing) * 10))
     }
 
+    .h-content {
+        height: calc(210mm - calc(var(--spacing) * 26))
+    }
+
     .divide-x {
         :where(& > :not(:last-child)){
             border-inline-start-width: calc(0.0625rem  * var(--tw-divide-x-reverse));

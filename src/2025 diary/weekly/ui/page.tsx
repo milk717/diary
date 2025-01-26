@@ -1,10 +1,10 @@
-import {PageLayout} from '../../shared/ui/page-layout.tsx';
+import {PageLayout} from '../../../shared/ui/page-layout.tsx';
 import {Dayjs} from 'dayjs';
 import {WeekTable} from './week-table.tsx';
 import {WeeklyTitle} from './title.tsx';
-import {Nav} from '../../shared/ui/nav.tsx';
-import {LineBox} from '../../shared/ui/line-box.tsx';
-import {Checklist} from '../../shared/ui/checklist.tsx';
+import {Nav} from '../../../shared/ui/nav.tsx';
+import {LineBox} from '../../../shared/ui/line-box.tsx';
+import {Checklist} from '../../../shared/ui/checklist.tsx';
 import {WeeklyMiniCalendar} from './mini-calendar.tsx';
 
 interface Props {

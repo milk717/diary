@@ -1,8 +1,7 @@
-import MsTodo from '../../assets/ms-todo.svg';
-import GoogleCalendar from '../../assets/google-calendar.svg';
-import Obsidian from '../../assets/obsidian.svg';
-
-import {CURRENT_YEAR} from '../../shared/constants.ts';
+import MsTodo from '../../../assets/ms-todo.png';
+import GoogleCalendar from '../../../assets/google-calendar.svg';
+import Obsidian from '../../../assets/obsidian.svg';
+import {CURRENT_YEAR} from '../../../shared/constants.ts';
 
 interface Props {
   monthNumber: number;

@@ -1,6 +1,6 @@
-import {generateCalendar} from '../../shared/utils/date.ts';
-import {CURRENT_YEAR} from '../../shared/constants.ts';
-import {cn} from '../../shared/utils/style.ts';
+import {generateCalendar} from '../../../shared/utils/date.ts';
+import {CURRENT_YEAR} from '../../../shared/constants.ts';
+import {cn} from '../../../shared/utils/style.ts';
 
 interface Props {
   monthNumber: number;
@@ -10,8 +10,8 @@ export const Calendar = ({monthNumber}: Props) => {
   const [monthDates, extra] = generateCalendar(CURRENT_YEAR, monthNumber);
 
   return (
-    <div className="border-slate-200 border-l border-r h-full">
-      <div className="flex justify-between items-center border-b border-slate-200">
+    <div className="border-slate-200 border-l border-r h-content">
+      <div className="flex justify-between items-center border-b border-slate-200 h-8">
         {new Array(7).fill(0).map((_, i) => (
           <div
             key={i}
@@ -20,7 +20,7 @@ export const Calendar = ({monthNumber}: Props) => {
           </div>
         ))}
       </div>
-      <div className="grid grid-cols-7 h-full">
+      <div className="grid grid-cols-7 h-[calc(210mm_-_calc(var(--spacing)_*_33))]">
         {monthDates?.map((month, i) =>
           i < 28 ? (
             <div

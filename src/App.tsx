@@ -1,12 +1,12 @@
-import {DailyPage} from './daliy/ui/page.tsx';
+import {DailyPage} from './2025 diary/daliy/ui/page.tsx';
 import dayjs from 'dayjs';
 import {CURRENT_YEAR} from './shared/constants.ts';
-import {WeeklyPage} from './weekly/ui/page.tsx';
-import {HabitPage} from './habit/ui/page.tsx';
-import {CoverPage} from './cover/ui/page.tsx';
-import {BlankPage} from './blank/ui/page.tsx';
-import {YearlyPage} from './yearly/ui/page.tsx';
-import {MonthlyPage} from './monthly/ui/page.tsx';
+import {WeeklyPage} from './2025 diary/weekly/ui/page.tsx';
+import {HabitPage} from './2025 diary/habit/ui/page.tsx';
+import {CoverPage} from './2025 diary/cover/ui/page.tsx';
+import {BlankPage} from './2025 diary/blank/ui/page.tsx';
+import {YearlyPage} from './2025 diary/yearly/ui/page.tsx';
+import {MonthlyPage} from './2025 diary/monthly/ui/page.tsx';
 
 const generateDailyPages = () => {
   const startOfYear = dayjs(`${CURRENT_YEAR}-01-01`);

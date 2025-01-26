@@ -1,5 +1,5 @@
 import dayjs from 'dayjs';
-import {CURRENT_YEAR} from '../../shared/constants.ts';
+import {CURRENT_YEAR} from '../../../shared/constants.ts';
 
 interface Props {
   monthNumber: number;

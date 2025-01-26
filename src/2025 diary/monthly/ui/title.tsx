@@ -1,7 +1,7 @@
-import {getMonthName} from '../../shared/utils/date.ts';
+import {getMonthName} from '../../../shared/utils/date.ts';
 import {ChevronLeft, ChevronRight, TreePalm} from 'lucide-react';
-import {cn} from '../../shared/utils/style.ts';
-import {CURRENT_YEAR} from '../../shared/constants.ts';
+import {cn} from '../../../shared/utils/style.ts';
+import {CURRENT_YEAR} from '../../../shared/constants.ts';
 
 interface Props {
   monthNumber: number;
@@ -32,7 +32,7 @@ const Title = ({monthNumber}: Props) => {
             className={cn(
               monthNumber === 12 ? 'stroke-slate-300' : 'stroke-slate-500',
             )}
-            size={12}
+            size={24}
           />
         </a>
       </div>

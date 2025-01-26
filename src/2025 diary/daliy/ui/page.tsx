@@ -1,14 +1,14 @@
-import {PageLayout} from '../../shared/ui/page-layout.tsx';
-import {CURRENT_YEAR} from '../../shared/constants.ts';
+import {PageLayout} from '../../../shared/ui/page-layout.tsx';
+import {CURRENT_YEAR} from '../../../shared/constants.ts';
 import {DailyTitle} from './title.tsx';
-import {Nav} from '../../shared/ui/nav.tsx';
-import {Checklist} from '../../shared/ui/checklist.tsx';
+import {Nav} from '../../../shared/ui/nav.tsx';
+import {Checklist} from '../../../shared/ui/checklist.tsx';
 import dayjs from 'dayjs';
-import {Box} from '../../shared/ui/box.tsx';
-import {LineBox} from '../../shared/ui/line-box.tsx';
+import {Box} from '../../../shared/ui/box.tsx';
+import {LineBox} from '../../../shared/ui/line-box.tsx';
 import {Frown, Sparkles, ThumbsUp, TreePalm} from 'lucide-react';
 import {TimeTable} from './time-table.tsx';
-import {MiniCalendar} from '../../shared/ui/mini-calendar.tsx';
+import {MiniCalendar} from '../../../shared/ui/mini-calendar.tsx';
 import {Icons} from './icons.tsx';
 
 interface Props {

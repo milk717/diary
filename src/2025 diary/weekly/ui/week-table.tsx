@@ -1,5 +1,5 @@
-import {Box} from '../../shared/ui/box.tsx';
-import {cn} from '../../shared/utils/style.ts';
+import {Box} from '../../../shared/ui/box.tsx';
+import {cn} from '../../../shared/utils/style.ts';
 import {Dayjs} from 'dayjs';
 
 interface Props {

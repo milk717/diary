@@ -1,10 +1,10 @@
-import {PageLayout} from '../../shared/ui/page-layout.tsx';
-import {Nav} from '../../shared/ui/nav.tsx';
+import {PageLayout} from '../../../shared/ui/page-layout.tsx';
+import {Nav} from '../../../shared/ui/nav.tsx';
 import {MonthlyTitle} from './title.tsx';
 import {Calendar} from './calendar.tsx';
-import {CURRENT_YEAR} from '../../shared/constants.ts';
-import {Checklist} from '../../shared/ui/checklist.tsx';
-import {Box} from '../../shared/ui/box.tsx';
+import {CURRENT_YEAR} from '../../../shared/constants.ts';
+import {Checklist} from '../../../shared/ui/checklist.tsx';
+import {Box} from '../../../shared/ui/box.tsx';
 
 interface Props {
   monthNumber: number;
@@ -16,8 +16,8 @@ const Page = ({monthNumber}: Props) => {
       <Nav monthNumber={monthNumber}></Nav>
       <div className="h-main">
         <MonthlyTitle monthNumber={monthNumber} />
-        <div className="grid grid-cols-7  h-full">
-          <div className="col-span-2 flex flex-col h-full">
+        <div className="grid grid-cols-7">
+          <div className="col-span-2 flex flex-col">
             <Checklist
               className="border-b border-slate-200"
               title="Monthly Start Checklist"
@@ -45,7 +45,7 @@ const Page = ({monthNumber}: Props) => {
               contents={['한달 목표 달성 점검하기', '루틴 실천 점검하기']}
             />
           </div>
-          <div className="col-span-5">
+          <div className="col-span-5 flex flex-col">
             <Calendar monthNumber={monthNumber} />
           </div>
         </div>
