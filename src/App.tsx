@@ -41,6 +41,8 @@ function App() {
         <MonthlyPage key={i} monthNumber={i + 1} />
       ))}
       {generateDailyPages()}
+
+      {/*<DailyPage monthNumber={1} dayNumber={17} />*/}
     </main>
   );
 }

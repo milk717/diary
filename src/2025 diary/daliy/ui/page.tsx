@@ -5,10 +5,9 @@ import {Nav} from '../../../shared/ui/nav.tsx';
 import {Checklist} from '../../../shared/ui/checklist.tsx';
 import dayjs from 'dayjs';
 import {Box} from '../../../shared/ui/box.tsx';
-import {LineBox} from '../../../shared/ui/line-box.tsx';
 import {Frown, Sparkles, ThumbsUp, TreePalm} from 'lucide-react';
 import {TimeTable} from './time-table.tsx';
-import {MiniCalendar} from '../../../shared/ui/mini-calendar.tsx';
+import {MiniCalendar} from './mini-calendar.tsx';
 import {Icons} from './icons.tsx';
 
 interface Props {
@@ -24,7 +23,7 @@ const Page = ({monthNumber, dayNumber}: Props) => {
       ).format('YYYY-MM-DD')}>
       <Nav monthNumber={monthNumber} />
       <div className="grid grid-cols-12">
-        <div className="col-span-5 h-main">
+        <div className="flex flex-col col-span-5 h-main">
           <DailyTitle monthNumber={monthNumber} dayNumber={dayNumber} />
           <div className="flex">
             <Checklist
@@ -44,24 +43,30 @@ const Page = ({monthNumber, dayNumber}: Props) => {
               </div>
             </div>
           </div>
-          <div className="grid grid-cols-2">
-            <LineBox
-              title="Obective"
-              description="오늘 이뤄야 할 목표에 대해 적어보자"
-            />
-            <LineBox
-              title="Action Item"
-              description="목표를 이루기 위한 행동을 적어보자"
+          <div className="flex flex-col flex-1">
+            <div className="grid grid-cols-2 flex-1 basis-2/3">
+              <Box
+                title="Obective"
+                description="오늘 이뤄야 할 목표에 대해 적어보자"
+                classNames={{
+                  base: 'flex-1',
+                  box: 'h-80',
+                }}
+              />
+              <Box
+                title="Action Item"
+                description="목표를 이루기 위한 행동을 적어보자"
+              />
+            </div>
+            <Box
+              classNames={{
+                base: 'border-b-slate-200 border-b flex-1 basis-1/3',
+                box: 'h-80',
+              }}
+              title="Feedback"
+              description="오늘의 목표 달성을 점검해보자"
             />
           </div>
-          <Box
-            classNames={{
-              base: 'border-b-slate-200 border-b h-full',
-              box: 'h-full',
-            }}
-            title="Feedback"
-            description="오늘의 목표 달성을 점검해보자"
-          />
         </div>
         <div className="flex flex-col col-span-3 h-main">
           <div className="flex justify-start items-start p-3 gap-1.5 border-b border-r border-slate-200 h-16">

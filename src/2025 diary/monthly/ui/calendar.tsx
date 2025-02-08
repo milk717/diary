@@ -35,9 +35,9 @@ export const Calendar = ({monthNumber}: Props) => {
                   'inline-block w-6 text-center leading-6 mx-2 my-1',
                   month.isCurrentMonth
                     ? month.isSaturday
-                      ? 'text-blue-600'
+                      ? 'text-blue-800'
                       : month.isSunday
-                        ? 'text-rose-600'
+                        ? 'text-rose-700'
                         : 'text-slate-700'
                     : 'text-slate-300',
                 )}>
@@ -58,9 +58,9 @@ export const Calendar = ({monthNumber}: Props) => {
                   'inline-block w-6 text-center leading-6 mx-2 my-1',
                   month.isCurrentMonth
                     ? month.isSaturday
-                      ? 'text-blue-600'
+                      ? 'text-blue-800'
                       : month.isSunday
-                        ? 'text-rose-600'
+                        ? 'text-rose-700'
                         : 'text-slate-700'
                     : 'text-slate-300',
                 )}>
@@ -74,9 +74,9 @@ export const Calendar = ({monthNumber}: Props) => {
                       'inline-block w-6 text-center leading-6 mx-2 my-1',
                       month.isCurrentMonth
                         ? month.isSaturday
-                          ? 'text-blue-600'
+                          ? 'text-blue-800'
                           : month.isSunday
-                            ? 'text-rose-600'
+                            ? 'text-rose-700'
                             : 'text-slate-700'
                         : 'text-slate-300',
                     )}>

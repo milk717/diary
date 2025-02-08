@@ -8,7 +8,7 @@ const Page = () => {
     <PageLayout id="routine">
       <Nav currentId="routine" />
       <div className="flex flex-col h-main">
-        <div className="flex w-full">
+        <div className="flex w-full h-1/4">
           <Box title="Routine" classNames={{base: 'flex-1', box: 'h-52'}} />
           <Box title="Routine" classNames={{base: 'flex-1', box: 'h-52'}} />
         </div>

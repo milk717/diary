@@ -58,9 +58,9 @@ const MiniCalendar = ({className, date}: Props) => {
                 'flex items-center justify-center text-[0.7rem]',
                 month.isCurrentMonth
                   ? month.isSaturday
-                    ? 'text-blue-600'
+                    ? 'text-blue-800'
                     : month.isSunday
-                      ? 'text-rose-600'
+                      ? 'text-rose-700'
                       : 'text-slate-700'
                   : 'text-slate-300',
               )}>

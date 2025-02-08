@@ -39,7 +39,7 @@ const Page = ({monthNumber}: Props) => {
               description="목표를 이루기 위한 행동을 적어보자"
             />
             <Checklist
-              className="border-t border-b border-slate-200 h-full"
+              className="border-t border-b border-slate-200"
               direction="row"
               title="Monthly Start Checklist"
               contents={['한달 목표 달성 점검하기', '루틴 실천 점검하기']}
